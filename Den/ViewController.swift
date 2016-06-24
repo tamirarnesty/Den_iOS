@@ -24,10 +24,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    @IBAction func clickBait(sender: AnyObject) {
+    @IBAction func submit(sender: UIButton) {
         userName = userNameField.text!
         password = passwordField.text!
+        
     }
+
+    
 }
 

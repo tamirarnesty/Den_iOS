@@ -26,9 +26,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx1-sn-FIn">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Return"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="EBA-3B-zp6"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,7 +66,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="clickBait:" destination="dkx-z0-nzr" eventType="touchUpInside" id="OOJ-yV-Fd7"/>
-                                    <segue destination="vhF-lq-MFW" kind="showDetail" id="hnd-Y3-DHg"/>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jmu-Cw-Awo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="tz2-xz-G5z" id="tHG-oH-Hvb"/>
+                        <outlet property="submit" destination="wUH-Zm-JHu" id="Agf-gk-HzG"/>
                         <outlet property="userNameField" destination="t4x-3K-5Ip" id="lH6-g9-y3e"/>
                         <outlet property="username" destination="t4x-3K-5Ip" id="4pp-kX-POf"/>
                         <outletCollection property="j" destination="t4x-3K-5Ip" id="OoH-8H-kzk"/>
