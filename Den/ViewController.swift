@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var button: UIButton!
+    @IBOutlet var userNameField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    var userName = "", password = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -21,5 +25,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func clickBait(sender: AnyObject) {
+        userName = userNameField.text!
+        password = passwordField.text!
+    }
 }
 
